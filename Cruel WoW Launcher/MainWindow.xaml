@@ -61,8 +61,6 @@
                 <ImageBrush Stretch="None" ImageSource="Resources/update_button_a.png"/>
             </Button.Background>
         </Button>
-        <CheckBox x:Name="ChkHDGraphics" Content="" HorizontalAlignment="Left" Margin="27,437,0,0" VerticalAlignment="Top" Style="{DynamicResource CustomCheckBox}" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="ChkHDGraphics_Click"/>
-        <Label Content="HD Graphics" HorizontalAlignment="Left" Margin="57,436,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="14" FontWeight="Bold" Foreground="#FF5FD25F"/>
         <Grid x:Name="ProgressGrid" HorizontalAlignment="Left" Height="49" Margin="10,538,0,0" VerticalAlignment="Top" Width="310" Visibility="Hidden">
             <ProgressBar x:Name="pbar" HorizontalAlignment="Left" Height="8" Margin="20,12,0,0" VerticalAlignment="Top" Width="194" BorderBrush="{x:Null}">
                 <ProgressBar.Foreground>

@@ -195,9 +195,6 @@ namespace Cruel_WoW_Launcher.Core
             // Set "verifying text" next to the progress bar
             WindowParent.DownloadStatus.Content = "Verifying";
 
-            // Disable hd graphics checkbox
-            WindowParent.ChkHDGraphics.IsEnabled = false;
-
             // Loop normal FilesList
             foreach (var item in Data.FilesList)
             {
@@ -301,7 +298,6 @@ namespace Cruel_WoW_Launcher.Core
                 WindowParent.ProgressGrid.Visibility = Visibility.Hidden;
                 WindowParent.PlayButton.Visibility = Visibility.Visible;
                 WindowParent.UpdatingPlaceholder.Visibility = Visibility.Hidden;
-                WindowParent.ChkHDGraphics.IsEnabled = true;
                 Extensions.UpdateClientVersion();
             }
         }
@@ -387,8 +383,6 @@ namespace Cruel_WoW_Launcher.Core
                     WindowParent.PlayButton.Visibility = Visibility.Visible;
 
                     WindowParent.UpdatingPlaceholder.Visibility = Visibility.Hidden;
-
-                    WindowParent.ChkHDGraphics.IsEnabled = true;
 
                     LogHandler.WriteToLog($"Downloaded file {Data.CurrentFileName} progress {Data.CurrentFileIndex} of {Data.DownloadListCount}");
 

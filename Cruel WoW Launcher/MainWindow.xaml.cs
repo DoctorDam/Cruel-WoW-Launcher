@@ -19,32 +19,13 @@ namespace Cruel_WoW_Launcher
         private void ExitButton_Click(object sender, RoutedEventArgs e) => Close();
 
         private void MinimizeButton_Click(object sender, RoutedEventArgs e) => WindowState = WindowState.Minimized;
-        private void ChkHDGraphics_Click(object sender, RoutedEventArgs e)
-        {
-            Properties.Settings.Default.HDGraphics = (bool)ChkHDGraphics.IsChecked;
-            Properties.Settings.Default.Save();
-
-            if ((bool)ChkHDGraphics.IsChecked)
-            {
-                if (MessageBox.Show("If you want to enable HD Graphics then launcher has to restart and recheck for updates!\r\n \r\nWould you like to restart now?", "ENABLE HD GRAPHICS CONTENT",
-                    MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
-                {
-                    Extensions.ResetClientVersion();
-                    Tools.RestartLauncher();
-                }
-                else
-                    ChkHDGraphics.IsChecked = false;
-            }
-        }
-
+        
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
             LogHandler.OnStartUp();
 
             // Load remote config document
             await XMLTools.LoadXMLRemoteConfigAsync();
-
-            ChkHDGraphics.IsChecked = Extensions.IsHDGraphicsEnable();
 
             // Load navbar links
             // Load news async

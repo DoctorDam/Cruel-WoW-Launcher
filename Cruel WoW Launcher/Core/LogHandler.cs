@@ -6,7 +6,7 @@ namespace Cruel_WoW_Launcher.Core
 {
     class LogHandler
     {
-        private static string LogFileName = $"{ Assembly.GetExecutingAssembly().GetName().Name }.log";
+        private static string LogFileName = $"ForgottenLandLauncher.log";
 
         public static void OnStartUp()
         {
