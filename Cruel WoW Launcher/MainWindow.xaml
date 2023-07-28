@@ -46,7 +46,6 @@
                 <RichTextBox x:Name="NewsArticle" VerticalAlignment="Top" Width="490" Background="{x:Null}" BorderBrush="{x:Null}" IsInactiveSelectionHighlightEnabled="True" IsReadOnly="True" Style="{DynamicResource RichTextBoxStyleArticle}"/>
             </ScrollViewer>
             <Label x:Name="NewsDate" Content="" HorizontalAlignment="Left" Margin="10,376,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Arial" FontWeight="Bold" Foreground="#FF83858A" VerticalContentAlignment="Center"/>
-            <Button x:Name="BtnReadMore" Content="Read More" HorizontalAlignment="Left" Margin="453,379,0,0" VerticalAlignment="Top" Width="74" FontFamily="Arial" FontWeight="Bold" Foreground="#FF83858A" Background="{x:Null}" BorderBrush="{x:Null}" Style="{DynamicResource ButtonStyleReadMore}" IsEnabled="False"/>
         </Grid>
         <ScrollViewer HorizontalAlignment="Left" Height="249" Margin="23,173,0,0" VerticalAlignment="Top" Width="297" Style="{DynamicResource BlackBGScrollViewer}">
             <Grid x:Name="ChangelogsGrid" VerticalAlignment="Top"/>
@@ -89,12 +88,12 @@
         <Grid x:Name="UpdatingPlaceholder" HorizontalAlignment="Left" Height="56" Margin="27,477,0,0" VerticalAlignment="Top" Width="272">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
-                    <GradientStop Color="#FF32251C" Offset="0"/>
-                    <GradientStop Color="#FF33251D" Offset="1"/>
-                    <GradientStop Color="#FF382920" Offset="0.5"/>
+                    <GradientStop Color="#1c2c3c" Offset="0"/>
+                    <GradientStop Color="#1c2c3c" Offset="1"/>
+                    <GradientStop Color="#1b243c" Offset="0.5"/>
                 </LinearGradientBrush>
             </Grid.Background>
-            <Label x:Name="LabelPlaceholder" Content="PLEASE WAIT" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="14" FontWeight="Bold" Foreground="#FF8F7B57"/>
+            <Label x:Name="LabelPlaceholder" Content="PLEASE WAIT" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="14" FontWeight="Bold" Foreground="#FF8A8383"/>
         </Grid>
     </Grid>
 </Window>

@@ -164,9 +164,6 @@
     <Resource Include="Resources\changelog_button_bg.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="CruelWoW.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\play_button_a.png" />
   </ItemGroup>
   <ItemGroup>

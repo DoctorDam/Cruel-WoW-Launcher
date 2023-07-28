@@ -284,7 +284,6 @@ namespace Cruel_WoW_Launcher.Core
                 await LoadNewsHeaderImageAsync(WindowParent.NewsGrid, WindowParent.NewsImage);
                 await LoadArticle(WindowParent.NewsArticle);
                 LoadNewsDate(WindowParent.NewsDate);
-                LoadReadMoreButton(WindowParent.BtnReadMore);
             }
         }
     }

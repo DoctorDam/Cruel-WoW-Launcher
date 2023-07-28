@@ -69,5 +69,10 @@ namespace Cruel_WoW_Launcher
             await downloader.UpdateDownloadListAsync();
             downloader.StartUpdating();
         }
+
+        private void BtnReadMore_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
