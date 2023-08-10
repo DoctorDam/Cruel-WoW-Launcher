@@ -46,11 +46,12 @@
                 <RichTextBox x:Name="NewsArticle" VerticalAlignment="Top" Width="490" Background="{x:Null}" BorderBrush="{x:Null}" IsInactiveSelectionHighlightEnabled="True" IsReadOnly="True" Style="{DynamicResource RichTextBoxStyleArticle}"/>
             </ScrollViewer>
             <Label x:Name="NewsDate" Content="" HorizontalAlignment="Left" Margin="10,376,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Arial" FontWeight="Bold" Foreground="#FF83858A" VerticalContentAlignment="Center"/>
+            <Button x:Name="BtnReadMore" Content="Force Update" HorizontalAlignment="Left" Margin="-379,274,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF83858A" FontFamily="Arial" FontSize="16" FontWeight="Bold" Style="{DynamicResource ButtonStyleReadMore}" Click="ForceUpdate_Click" RenderTransformOrigin="0.49,-2.796"/>
         </Grid>
         <ScrollViewer HorizontalAlignment="Left" Height="249" Margin="23,173,0,0" VerticalAlignment="Top" Width="297" Style="{DynamicResource BlackBGScrollViewer}">
             <Grid x:Name="ChangelogsGrid" VerticalAlignment="Top"/>
         </ScrollViewer>
-        <Button x:Name="PlayButton" Content="" HorizontalAlignment="Left" Margin="27,477,0,0" VerticalAlignment="Top" Width="272" Height="56" BorderBrush="{x:Null}" Foreground="{x:Null}" Style="{DynamicResource ButtonStylePlay}" Click="PlayButton_Click" Visibility="Hidden">
+        <Button x:Name="PlayButton" Content="" HorizontalAlignment="Left" Margin="27,477,0,0" VerticalAlignment="Top" Width="272" Height="56" BorderBrush="{x:Null}" Foreground="{x:Null}"  Style="{DynamicResource ButtonStylePlay}" Click="PlayButton_Click" Visibility="Hidden">
             <Button.Background>
                 <ImageBrush Stretch="None" ImageSource="Resources/play_button_a.png"/>
             </Button.Background>

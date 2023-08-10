@@ -165,7 +165,7 @@ namespace Cruel_WoW_Launcher.Core
                 LogHandler.WriteToLog($"Error while directory listing ({url}):\r\n{ex.Message}");
             }
         }
-
+        
         // This will populate the download list
         public async Task UpdateDownloadListAsync()
         {

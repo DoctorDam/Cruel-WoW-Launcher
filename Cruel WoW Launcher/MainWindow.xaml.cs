@@ -74,5 +74,15 @@ namespace Cruel_WoW_Launcher
         {
 
         }
+        private async void ForceUpdate_Click(object sender, RoutedEventArgs e) 
+        {
+            // Get Normal & HD Graphics files list from remote server
+            await Downloader.UpdateNormalFilestList();
+            await Downloader.UpdateHDFilestList();
+            Downloader downloader = new Downloader(this);
+            // Update download list based on if hd graphics checkbox is checked
+            await downloader.UpdateDownloadListAsync();
+            downloader.StartUpdating();
+        }
     }
 }
