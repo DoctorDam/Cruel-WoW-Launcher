@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cruel WoW Launcher", "Cruel WoW Launcher.csproj", "{DA8415CE-55BE-4709-8B02-ABC2F8088174}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forgotten Land Launcher", "Forgotten Land Launcher.csproj", "{DA8415CE-55BE-4709-8B02-ABC2F8088174}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
